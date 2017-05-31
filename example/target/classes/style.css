@@ -1,0 +1,169 @@
+
+body {
+    font-size: 14px;
+    color: #282d35;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5
+	
+}
+
+
+/*Вся область-"таблица"*/
+
+div{
+		
+	display: table;
+	float: left;
+	width:1010;
+    float: left;
+    margin: 2px;
+    padding: 2px;
+}
+/*одна строка заглавная*/
+div.th{
+	display:table-raw;
+	margin: 2px;
+    padding: 2px;
+    text-align: center;
+	
+}
+/*одна ячейка в заглавной строке со знаком N*/
+div.tdN{
+	display:table-cell;
+	background: #ccc; 
+	float: left;
+	text-align: center;
+	width: 50px;
+	border-top: 2px #eee solid;
+	}
+	/*одна любая ячейка в заглавной строке*/
+div.td{
+	display:table-cell;
+	border-top: 2px #eee solid;
+	background: #ccc; 
+	float: left;
+	text-align: center;
+	width:150px;
+}
+div.tdinv{
+	display: none;
+}
+	
+/* --------------------  строки кроме заглавной -------------------------------------------------	 */
+	
+/*одна любая другая строка*/
+div.tr{
+	display:table-raw
+	margin: 2px;
+    padding: 2px;
+    text-align: center;
+	
+} 
+/*параметры формы*/
+form.f{
+display:table;
+margin-bottom:0;
+}
+
+
+
+/*одна ячейка в любой строке с номером строки будет из java*/
+
+	div.tdNum{
+	display:table-cell;
+	background: #ccc; 
+	float: left;
+	text-align: center;
+	width: 50px;
+	border-top: 4px #eee solid;
+	
+	}
+	
+/*одна ячейка*/
+div.td{
+	display:table-cell;
+	border-top: 2px #eee solid;
+	background: #ccc; 
+	float: left;
+	text-align: center;
+	width:150px;
+}
+/*параметры окна ввода*/
+.td input[type="text"] {
+    display: block;
+    padding: 3px;
+    margin: 0 5px;
+	width: 145px;
+	float: left;
+}
+
+/*параметры кнопки submit*/
+
+.td input[type="submit"] {
+    display: block;
+    padding: 3px;
+    margin: 0 5px;
+	width: 65px;
+	float: left;
+	background: #f3b442;
+}
+
+/* ------------------------последняя строка с добавлением студента -------------------------------- */
+	
+	/*одна последняя строка*/
+.tfoot {
+	display:table-raw;
+	margin: 2px;
+    padding: 2px;
+    text-align: center;
+	
+}
+
+
+/*последняя ячейка с кнопкой add последней строки*/
+.tdfoot{
+	display:table-cell;
+	border-top: 2px #eee solid;
+	background: #ccc; 
+	float: left;
+	text-align: center;
+	width:150px;
+}
+	
+	/*параметры кнопки add*/
+
+	.tfoot [type="submit"] {
+    display: block;
+    padding: 3px;
+    margin: 0 5px;
+	width: 140px;
+	float: left;
+	}
+	
+	/*параметры кнопки add*/
+	.tdfoot input {
+		background: #f3b442;
+	}
+	
+	/* параметры зоны вывода исключений */
+	
+
+	.exc{
+		 display: block;
+    padding: 3px;
+    margin: 0 5px;
+	width: 140px;
+	float: left;
+	}
+   
+   
+   
+   
+
+
+
+
+
+
+
+
